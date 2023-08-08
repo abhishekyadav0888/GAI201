@@ -8,5 +8,10 @@
         "name": "Popcorn",
         "price": 2.0,
         "availability": false
+    },
+    {
+        "name": "Chicken tikka",
+        "price": 499.0,
+        "availability": true
     }
 ]

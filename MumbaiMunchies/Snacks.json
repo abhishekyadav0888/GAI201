@@ -1,17 +1,22 @@
 [
     {
-        "name": "Pretzels",
-        "price": 1.0,
+        "name": "Pasta",
+        "price": 99.0,
         "availability": false
     },
     {
-        "name": "Popcorn",
-        "price": 2.0,
+        "name": "Burger",
+        "price": 149.0,
         "availability": false
     },
     {
-        "name": "Chicken tikka",
-        "price": 499.0,
+        "name": "Coke",
+        "price": 49.0,
+        "availability": true
+    },
+    {
+        "name": "Noodles",
+        "price": 199.0,
         "availability": true
     }
 ]

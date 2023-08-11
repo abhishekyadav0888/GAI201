@@ -9,13 +9,13 @@ def allSnacks():
     except FileNotFoundError:
         snacks_data = []
 
-    
     for snack in snacks_data:
         name = snack["name"]
         price = snack["price"]
         availability = "yes" if snack["availability"] else "no"
 
         print(f"name {name}  price = ${price} Availability = {availability}")
+
 
 
 
@@ -38,19 +38,17 @@ def addNewSnack():
         price = float(input("Enter snack price: "))
         availability = input("Is the snack available (yes/no): ").lower() == "yes"
 
-        
         new_snack = {
             "name": name,
             "price": price,
             "availability": availability
         }
 
-        
         snacks_data.append(new_snack)
 
-    
     with open(file_path, "w") as json_file:
         json.dump(snacks_data, json_file, indent=4)
+
 
 
 
@@ -72,6 +70,7 @@ def removeSnacks():
         json.dump(removed_snacks, json_file, indent=4)
 
     print(f"Snack '{name_to_remove}' has been removed.")
+
 
 
 
@@ -104,6 +103,7 @@ def updateAvailability():
 
 
 
+
 def buySnack():
     file_path = "snacks.json"
 
@@ -131,6 +131,8 @@ def buySnack():
 
     with open(file_path, "w") as json_file:
         json.dump(snacks_data, json_file, indent=4)
+
+
 
 
 
